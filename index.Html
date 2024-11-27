@@ -1,21 +1,39 @@
 <!DOCTYPE html>
+<!-- Déclare le type de document comme HTML5 -->
+
+<!-- Définit la langue de la page comme anglais -->
 <html lang="en">
+
 <head>
+    <!-- Définit l'encodage des caractères comme UTF-8 -->
     <meta charset="UTF-8">
+
+    <!-- Règle le viewport pour assurer une compatibilité mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Définit le titre de la page affiché dans l'onglet du navigateur -->
     <title>Portfolio Website With Particle Js</title>
+
+    <!-- Lien vers la feuille de styles CSS -->
     <link rel="stylesheet" href="styles.css">
-    <!--Font awesome Cdn -->
+
+    <!-- Bibliothèque d'icônes Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>    
+    <!-- Conteneur principal de Particle.js -->
     <div id="particles-js">
+        <!-- Conteneur global -->
         <div class="container">
+            <!-- Superposition visuelle -->
             <div class="overlay">
+                <!-- Section d'en-tête -->
                 <div class="header">
+                    <!-- Logo avec un lien vers le haut -->
                     <div class="logo">
                         <a href="#" class="scrollUp">Michèle</a>
                     </div>
+                    <!-- Liste des liens de navigation -->
                     <ul>
                         <li><a href="#" class="scrollUp">Accueil</a></li>
                         <li><a href="#">À Propos</a></li>
@@ -24,19 +42,26 @@
                         <li><a href="#">GitHub</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
+                    <!-- Icône du menu burger -->
                     <div class="fa-solid fa-bars"></div>
                 </div>
+                    <!-- Section principale de présentation -->
                     <div class="Hero-Header">
+                        <!-- Titre principal avec une mise en valeur -->
                         <h1>Ce que j'aime : <span>Design</span></h1>
+                        <!-- Sous-titre animé -->
                         <h3>Je suis&nbsp;<span id="text"></span></h3>
+                        <!-- Liens sociaux -->
                         <div class="social">
                             <i class="fa-brands fa-linkedin">‌</i>
                             <i class="fa-brands fa-github"></i>
                     </div>
+                    <!-- Bouton principal -->
                     <div class="hero-btn">
                         <button>Me Recruter</button>
                     </div>
                     <div>
+                        <!-- Image d'icône -->
                         <img src="arrow-up-solid.svg" class="icone">
                     </div>
                 </div>
@@ -46,7 +71,7 @@
 
     <!--Paricle JS-->
 
-
+    <!-- Bibliothèque Typed.js pour le texte animé -->
     <!-- Typed js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
 

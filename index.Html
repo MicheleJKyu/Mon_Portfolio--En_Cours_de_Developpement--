@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website With Particle Js</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Font awesome Cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>    
+    <div id="particles-js">
+        <div class="container">
+            <div class="overlay">
+                <div class="header">
+                    <div class="logo">
+                        <a href="#" class="scrollUp">Michèle</a>
+                    </div>
+                    <ul>
+                        <li><a href="#" class="scrollUp">Accueil</a></li>
+                        <li><a href="#">À Propos</a></li>
+                        <li><a href="#">Mes Projets</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="fa-solid fa-bars"></div>
+                </div>
+                    <div class="Hero-Header">
+                        <h1>Ce que j'aime : <span>Design</span></h1>
+                        <h3>Je suis&nbsp;<span id="text"></span></h3>
+                        <div class="social">
+                            <i class="fa-brands fa-linkedin">‌</i>
+                            <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="hero-btn">
+                        <button>Me Recruter</button>
+                    </div>
+                    <div>
+                        <img src="arrow-up-solid.svg" class="icone">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Paricle JS-->
+
+
+    <!-- Typed js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+
+    <script>
+        let menu = document.querySelector('ul');
+        let bars = document.querySelector('.header .fa-bars');
+
+        bars.addEventListener('click', () => {
+            menu.classList.toggle('show')
+        });
+
+        var typed = new Typed('#text' , {
+            strings: ['Développeuse Web.' , 'développeuse Mobile.' , 'Développeuse Front-End.' , 'Développeuse Back-End.' , 'Développeuse d\'applications.'],
+            typeSpeed: 25,
+            backSpeed: 25,
+            smartBackspace: true,
+            loop: true,
+        })
+
+    </script>
+
+
+
+</body>
+
+</html>

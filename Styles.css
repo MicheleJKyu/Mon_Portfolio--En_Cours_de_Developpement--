@@ -1,90 +1,90 @@
 /* Fonts */
+/* Importation de la police "Poppins" depuis Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'poppins';
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espacements internes par défaut */
+    box-sizing: border-box; /* Inclut les bordures et paddings dans les dimensions */
+    text-decoration: none; /* Supprime les décorations de texte (ex. soulignement des liens) */
+    list-style: none; /* Supprime les puces des listes */
+    font-family: 'poppins'; /* Applique la police "Poppins" à tous les éléments */
 }
 
 .container{
-    min-height: 100vh;
-    width: 100%;
-    background: url(Image-BG1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    min-height: 100vh; /* Définit une hauteur minimale correspondant à la hauteur de la fenêtre */
+    width: 100%; /* Occupe toute la largeur disponible */
+    background: url(Image-BG1.jpeg); /* Définit une image d'arrière-plan */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image d'arrière-plan */
+    position: relative; /* Positionne le conteneur pour permettre le positionnement absolu d'enfants */
 }
 
 .header{
-    min-height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 8%;
-    z-index: 9;
+    min-height: 80px; /* Définit une hauteur minimale pour l'en-tête */
+    width: 100%; /* Occupe toute la largeur disponible */
+    display: flex; /* Utilise flexbox pour aligner les éléments enfants */
+    justify-content: space-between; /* Ajoute un espace égal entre les éléments enfants */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 0 8%; /* Ajoute un espacement horizontal */
+    z-index: 9; /* Positionne l'en-tête au-dessus des autres éléments */
 }
 
 .logo a{
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #ffffff;
+    font-size: 2.5rem; /* Définit une taille de police pour le logo */
+    font-weight: 600; /* Applique un poids de police semi-gras */
+    color: #ffffff; /* Définit la couleur du logo en blanc */
 }
 
 ul li{
-    display: inline-block;
+    display: inline-block; /* Affiche les éléments de liste sur une seule ligne */
 }
 
 ul li a{
-    margin: 0 20px;
-    font-size: 1.3rem;
-    color: #ffffff;
-    transition: .6s;
-    position: relative;
+    margin: 0 20px; /* Ajoute un espacement horizontal entre les liens */
+    font-size: 1.3rem; /* Définit une taille de police pour les liens */
+    color: #ffffff; /* Définit la couleur des liens en blanc */
+    transition: .6s; /* Applique une transition de 0,6 seconde pour les effets */
+    position: relative; /* Positionne les liens pour permettre des pseudo-éléments relatifs */
 }
 
 ul li a:after{
-    position: absolute;
-    content: '';
-    height: 3px;
-    width: 0%;
-    top: 100%;
-    right: 0;
-    background-color: #27a7a7;
-    border-radius: 3px;
-    transition: .3s;
+    position: absolute; /* Place le pseudo-élément par rapport au lien */
+    content: ''; /* Crée une ligne décorative sous le lien */
+    height: 3px; /* Définit la hauteur de la ligne */
+    width: 0%; /* La ligne est invisible au départ */
+    top: 100%; /* Positionne la ligne juste sous le texte */
+    right: 0; /* Aligne à droite */
+    background-color: #27a7a7; /* Couleur de la ligne */
+    border-radius: 3px; /* Arrondi les extrémités de la ligne */
+    transition: .3s; /* Transition pour les changements de largeur */
 }
 
 ul li a:hover:after{
-    width: 100%;
+    width: 100%; /* Étend la ligne sur toute la largeur du lien au survol */
 }
 
 ul li a:hover{
-    color: #27a7a7;
+    color: #27a7a7; /* Change la couleur du lien au survol */
 }
 
 #particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 1;
+    position: absolute; /* Place l'élément en arrière-plan */
+    top: 0; /* Aligne en haut */
+    left: 0; /* Aligne à gauche */
+    height: 100vh; /* Occupe toute la hauteur visible */
+    width: 100%; /* Occupe toute la largeur visible */
+    z-index: 1; /* Place derrière les autres éléments */
 }
 
 .header .fa-bars {
-    padding: 16px;
-    z-index: 9;
-    font-size: 19px;
-    color: #ffffff;
-    cursor: pointer;
-    border: 1px solid #ffffff;
-    backdrop-filter: blur(5px);
-    display: none;
+    padding: 16px; /* Espacement interne */
+    z-index: 9; /* Place au-dessus d'autres éléments */
+    font-size: 19px; /* Taille de l'icône */
+    color: #ffffff; /* Couleur blanche pour l'icône */
+    cursor: pointer; /* Affiche un pointeur au survol */
+    border: 1px solid #ffffff; /* Ajoute une bordure blanche */
+    backdrop-filter: blur(5px); /* Applique un flou à l'arrière-plan */
+    display: none; /* Cache l'élément par défaut */
 }
 
 button {

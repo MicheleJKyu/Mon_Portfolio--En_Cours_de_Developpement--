@@ -88,184 +88,184 @@ ul li a:hover{
 }
 
 button {
-    width: 200px;
-    height: 45px;
-    margin: 50px 0;
-    font-size: 1.5rem;
-    font-weight: 500;
-    background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255,183, 89)70%);
-    cursor: pointer;
-    border: none;
-    position: relative;
-    transition: .6s;
-    z-index: 1;
+    width: 200px; /* Largeur du bouton */
+    height: 45px; /* Hauteur du bouton */
+    margin: 50px 0; /* Marge verticale */
+    font-size: 1.5rem; /* Taille du texte */
+    font-weight: 500; /* Poids moyen pour le texte */
+    background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255,183, 89)70%); /* Dégradé d'arrière-plan */
+    cursor: pointer; /* Curseur interactif */
+    border: none; /* Supprime les bordures */
+    position: relative; /* Nécessaire pour les enfants positionnés */
+    transition: .6s; /* Transition pour les effets visuels */
+    z-index: 1; /* Place le bouton au-dessus des éléments voisins */
         &:hover{
-            box-shadow: 5px 6px 5px #c49b66;
+            box-shadow: 5px 6px 5px #c49b66; /* Ombre au survol */
     }
 }
 
 .hero-btn button::after{
-    content: '';
-    position: absolute;
-    top: 60%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 105%;
-    border: 1px solid #c49b66;
-    z-index: -1;
+    content: ''; /* Crée un cadre décoratif autour du bouton */
+    position: absolute; /* Positionné par rapport au bouton */
+    top: 60%; /* Position verticale du cadre */
+    left: 53%; /* Position horizontale du cadre */
+    transform: translate(-50%, -50%); /* Centre le cadre */
+    width: 100%; /* Largeur du cadre */
+    height: 105%; /* Hauteur légèrement plus grande que le bouton */
+    border: 1px solid #c49b66; /* Bordure du cadre */
+    z-index: -1; /* Place le cadre derrière le bouton */
 }
 
 .btn{
-    height: 100px;
-    width: 100px;
-    background-color: #c49b66;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    cursor: pointer;
+    height: 100px; /* Taille verticale */
+    width: 100px; /* Taille horizontale */
+    background-color: #c49b66; /* Couleur de fond */
+    border-radius: 50%; /* Forme circulaire */
+    display: flex; /* Conteneur flex pour le centrage */
+    justify-content: center; /* Centre horizontalement le contenu dans le bouton */
+    align-items: center; /* Centre verticalement le contenu dans le bouton */
+    position: fixed; /* Positionne le bouton à un emplacement fixe par rapport à la fenêtre */
+    right: 20px; /* Espace entre le bouton et le bord droit de la fenêtre */
+    bottom: 20px; /* Espace entre le bouton et le bord inférieur de la fenêtre */
+    cursor: pointer; /* Change le curseur en pointeur pour indiquer l'interactivité */
 }
 
 .icone {
-    width: 50px;
+    width: 50px; /* Définit la largeur de l'image ou de l'icône */
 }
 
 .Hero-Header{
-    padding: 9% 8%;
-    z-index: 9 !important;
-    font-size: 2rem;
+    padding: 9% 8%; /* Ajoute un espacement autour du contenu, haut-bas et gauche-droite */
+    z-index: 9 !important; /* Priorité élevée pour superposer cet élément */
+    font-size: 2rem; /* Taille de police par défaut pour le contenu */
 }
 
 .Hero-Header h1 {
-    color: #fff;
-    z-index: 9 !important;
-    margin: 60px;
-    font-size: 5.5rem;
+    color: #fff; /* Texte blanc pour le titre principal */
+    z-index: 9 !important; /* Priorité pour superposition */
+    margin: 60px; /* Espacement autour du titre */
+    font-size: 5.5rem; /* Taille importante pour le titre */
 }
 
 .Hero-Header h1 span {
-    background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255,183, 89)70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255,183, 89)70%); /* Dégradé de couleurs pour le texte */
+    -webkit-background-clip: text; /* Découpe l'arrière-plan au niveau du texte */
+    -webkit-text-fill-color: transparent; /* Rend le texte transparent pour afficher le dégradé */
 }
 
  .Hero-Header h3 {
-    font-size: 3rem;
-    color: #fff;
-    font-weight: 300;
-    text-transform: uppercase;
+    font-size: 3rem; /* Taille de police pour le sous-titre */
+    color: #fff; /* Texte blanc pour le sous-titre */
+    font-weight: 300; /* Police fine pour un aspect léger */
+    text-transform: uppercase; /* Convertit le texte en majuscules */
  }
 
  #text{
-    font-size: 3rem;
-    color: #fff;
-    font-weight: 600;
+    font-size: 3rem; /* Taille de police pour le texte animé */
+    color: #fff; /* Texte blanc */
+    font-weight: 600; /* Police semi-gras */
  }
 
  .social{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-top: 50px;
+    display: flex; /* Disposition en ligne pour les icônes sociales */
+    align-items: center; /* Aligne les icônes verticalement */
+    gap: 30px; /* Espacement entre les icônes */
+    margin-top: 50px; /* Espace entre la section et les éléments précédents */
  }
 
  .social i {
-    font-size: 24px;
-    padding: 14px 15px;
-    background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255,183, 89)70%);
-    cursor: pointer;
-    position: relative;
+    font-size: 24px; /* Taille des icônes des réseaux sociaux */
+    padding: 14px 15px; /* Espacement interne autour des icônes */
+    background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255,183, 89)70%); /* Dégradé en arrière-plan des icônes */
+    cursor: pointer; /* Change le curseur pour indiquer l'interactivité */
+    position: relative; /* Nécessaire pour positionner l'effet ::after */
  }
 
  .social i::after {
-    content:'';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    width: 110%;
-    height: 110%;
-    border: 1px solid #c49b66;
+    content:''; /* Ajoute un contenu vide pour un effet de bordure animée */
+    position: absolute; /* Permet un positionnement absolu par rapport à l'élément parent */
+    top: 50%; /* Centre verticalement l'effet */
+    left: 50%; /* Centre horizontalement l'effet */
+    transform: translate(-50% , -50%); /* Ajuste l'effet pour qu'il soit parfaitement centré */
+    width: 110%; /* Taille légèrement supérieure à l'icône */
+    height: 110%; /* Hauteur légèrement supérieure à l'icône */
+    border: 1px solid #c49b66; /* Bordure décorative autour de l'icône */
  }
 
  .social i:nth-child(1):after{
-    animation-delay: 0.2s;
-    animation: rotate 5s infinite alternate;
+    animation-delay: 0.2s; /* Délai avant le démarrage de l'animation pour la première icône */
+    animation: rotate 5s infinite alternate; /* Rotation animée en alternance infinie */
  }
 
  .social i:nth-child(2):after{
-    animation-delay: 0.5s;
-    animation: rotate 5s infinite alternate-reverse;
+    animation-delay: 0.5s; /* Délai avant le démarrage de l'animation pour la deuxième icône */
+    animation: rotate 5s infinite alternate-reverse; /* Rotation animée inversée en alternance infinie */
  }
 
  .social i:nth-child(3):after{
-    animation-delay: 1s;
-    animation: rotate 4s infinite alternate;
+    animation-delay: 1s; /* Délai avant l'animation pour la troisième icône */
+    animation: rotate 4s infinite alternate; /* Rotation alternée infinie avec une durée de 4s */
  }
 
  .social i:nth-child(4):after{
-    animation-delay: 1.2s;
-    animation: rotate 4.2s infinite alternate-reverse;
+    animation-delay: 1.2s; /* Délai avant l'animation pour la quatrième icône */
+    animation: rotate 4.2s infinite alternate-reverse; /* Rotation alternée inversée avec une durée de 4.2s */
  }
 
  @keyframes rotate {
     100%{
-        transform: translate(-50% , -50%) rotate(360deg);
+        transform: translate(-50% , -50%) rotate(360deg); /* Définit une rotation complète de 360° */
     }
  }
 
 @media (max-width:1100px) {
     .header{
-        position: relative;
-        background-color: #050f19;
+        position: relative; /* Place l'en-tête dans le flux du document */
+        background-color: #050f19; /* Arrière-plan foncé pour les petits écrans */
     }
     .header .fa-bars{
-        display: block;
+        display: block; /* Rend visible l'icône du menu burger */
     }
     .header button{
-        margin-left: 100px;
+        margin-left: 100px; /* Ajoute un espacement à gauche pour le bouton */
     }
 
     ul{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: rgba(255,255,255,0.2);
-        z-index: 999;
-        border-bottom: 0.1px solid rgba(131, 131, 131, 1);
-        backdrop-filter: blur(100px);
-        width: 100%;
-        opacity: 0;
-        transition: .3s;
+        position: absolute; /* Positionne la liste de navigation en dehors du flux normal */
+        top: 100%; /* Place la liste directement sous l'en-tête */
+        left: 0; /* Alignement à gauche de l'écran */
+        background-color: rgba(255,255,255,0.2); /* Arrière-plan semi-transparent pour la liste */
+        z-index: 999; /* Assure que la liste est au-dessus des autres éléments */
+        border-bottom: 0.1px solid rgba(131, 131, 131, 1); /* Ligne de séparation subtile */
+        backdrop-filter: blur(100px); /* Floute légèrement l'arrière-plan sous la liste */
+        width: 100%; /* La liste occupe toute la largeur */
+        opacity: 0; /* Cache la liste par défaut */
+        transition: .3s; /* Animation de transition fluide */
     }
 
     .fa-bars{
-        display: block;
+        display: block; /* Affiche l'icône du menu burger pour les petits écrans */
     }
 
     ul li{
-        display: block;
-        margin: 10px 0;
-        padding: 15px 6%;
-        border-bottom: 0.1px solid #999;
+        display: block; /* Chaque élément de liste occupe une ligne entière */
+        margin: 10px 0; /* Espacement vertical entre les éléments */
+        padding: 15px 6%; /* Espacement interne pour une meilleure lisibilité */
+        border-bottom: 0.1px solid #999; /* Ligne de séparation entre les éléments */
     }
 
     ul li a{
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Taille de texte plus grande pour une meilleure visibilité */
     }
     
     ul li:last-child{
-        border: none;
+        border: none; /* Supprime la bordure inférieure pour le dernier élément */
     }
 
     .show{
-        opacity: 1;
+        opacity: 1; /* Rendu visible des éléments lorsque le menu est activé */
     }
     .container{
-        background-position: center;
+        background-position: center; /* Centre l'image d'arrière-plan */
     }
 }

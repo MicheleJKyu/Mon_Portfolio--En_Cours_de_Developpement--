@@ -419,10 +419,16 @@ h1.title1 {
     align-items: center;
 }
 
+div.button {
+    display: flex;
+    height: 80px;
+    bottom: 80px;
+}
+
 .form-container {
-    width: 840px;
+    width: 800px;
     border: 1px solid #fff;
-    padding: 32px 24px;
+    padding: 20px 24px;
     font-size: 14px;
     color: #000;
     background-color: rgb(255, 200, 127);
@@ -464,7 +470,7 @@ h1.title1 {
     border-radius: 8px;
     resize: none;
     color: #000;
-    height: 96px;
+    height: 300px;
     border: 1px solid #000;
     background-color: transparent;
     font-family: inherit;

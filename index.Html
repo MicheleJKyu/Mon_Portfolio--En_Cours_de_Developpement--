@@ -33,11 +33,11 @@
                     <div class="navbar">
                         <!-- Logo avec un lien vers le haut -->
                         <div class="logo">
-                            <a href="/index.Html" class="scrollup">Michèle</a>
+                            <a href="/index.Html" type="scrollup">Michèle</a>
                         </div>
                         <!-- Liste des liens de navigation -->
                         <ul>
-                            <li><a href="/index.Html" class="scrollUp">Accueil</a></li>
+                            <li><a href="/index.Html" type="scrollUp">Accueil</a></li>
                             <li><a href="#present">Présentation</a></li>
                             <li><a href="#about">À Propos</a></li>
                             <li><a href="/Mes-Projets.Html">Mes Projets</a></li>
@@ -71,7 +71,7 @@
 
             <!-- Section Présentation -->
              <div>
-                <section>
+                <section class="part1">
                     <h1 class="title">Présentation</h1>
                     <p class="intro">Avant toute chose, je me présente, j'ai 27 ans et je suis actuellement en reconversion
                     développeuse web. D'Octobre 2024 à Février 2025, je suis une formation PP Découverte du
@@ -88,7 +88,7 @@
 
             <!-- Section partie À Propos -->
             <div>
-                <section>
+                <section class="part2">
                     <h1 class="title">À Propos</h1>
                     <p class="text"> Passionnée d’informatique et des nouvelles technologies, je fais le choix de me diriger
                     vers le métier de développeuse web, après des études dans la filière équine.
@@ -118,7 +118,7 @@
 
             <!-- Section partie Compétences -->
             <div>
-                <section>
+                <section class="part1">
                     <h1 class="title">Compétences</h1>
                     <!-- Partie avec les différentes Technologies de languages utilisés, avec des animations en JS -->
                 </section>
@@ -126,9 +126,67 @@
 
             <!-- Section partie Contact -->
              <div>
-                <section>
-                    <h1 class="title">Contact</h1>
-                    <!-- Partie avec le Formulaire de contact -->
+                <section class="part2">
+                        <div class="form-container">
+                            <h1 class="title1">Contact</h1>
+                            <form class="form" method="post">
+                                <div class="form-group">
+                                    <label>Nom</label>
+                                    <input type="nom" name="name" maxlength="20" minlength="2" placeholder="Nom" required>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label>Prénom</label>
+                                    <input type="prenom" name="firstname" maxlength="20" minlength="2" placeholder="Prénom" required>
+                                </div>
+                    
+                                <div class="form-group">
+                                    <label>Votre email</label>
+                                    <input type="email" name="email" placeholder="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Objet</label>
+                                    <input type="object" name="objet" placeholder="objet" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>message</label>
+                                    <textarea name="message" placeholder="message" required></textarea>
+                                </div>
+                    
+                        <!--    <div class="form-group">
+                                    <label>Ajouter une Pièce Jointe</label>
+                                    <input type="file" name="file" placeholder="Choisir un fichier" required>
+                                </div> -->
+
+                                <div class="button">
+                                    <button class="form-submit-btn" type="submit">Envoyer</button>
+                                </div>
+                            </form>
+                        </div>
+                </section>
+            </div>
+
+            <div>
+                <section part="footer">
+                    <footer>
+                        <div class="footerContainer">
+                            <div class="socialIcons">
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                <a href=""><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <div class="footerNav">
+                                <ul><li><a href="">Accueil</a></li>
+                                    <li><a href="">Présentation</a></li>
+                                    <li><a href="">À Propos</a></li>
+                                    <li><a href="">Me Contacter/Me Recruter</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="footerBottom">
+                            <p>Copyright &copy; Conçu pendant ma formation PP Numérique AFPA - Décembre 2024 - Janvier 2025. Conçu par <span class="designer">Michèle</span></p>
+                        </div>
                 </section>
             </div>
         </div>

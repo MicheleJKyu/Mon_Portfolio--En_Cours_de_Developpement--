@@ -50,11 +50,26 @@
     /* Positionne l'en-tête au-dessus des autres éléments */
 }
 
-#header .navbar {
-    background: #6b65657a;
+.navbar {
+    background: #6b65657a; /* Définit une couleur d'arriere plan */
     position: sticky;
+    height: 50px;
     top: 0;
     text-align: right;
+    min-height: 80px;
+    /* Définit une hauteur minimale pour l'en-tête */
+    width: 100%;
+    /* Occupe toute la largeur disponible */
+    display: flex;
+    /* Utilise flexbox pour aligner les éléments */
+    justify-content: space-between;
+    /* Ajoute un espace égal */
+    align-items: center;
+    /* Centre les éléments verticalement */
+    padding: 0 8%;
+    /* Ajoute un espacement horizontal */
+    z-index: 9;
+    /* Positionne l'en-tête au-dessus des autres éléments */
 }
 
 .logo a {
@@ -337,6 +352,239 @@ button {
     /* Rotation animée inversée en alternance infinie */
 }
 
+.text {
+    padding: 0.5rem 14%;
+    text-align: justify;
+    color: #ffffff;
+}
+
+section.part1 {
+    background-color: #111;
+    padding-bottom: 40px;
+}
+
+section.part2 {
+    background-color: #000;
+    padding-bottom: 40px;
+}
+
+.send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'poppins' , 'arial', 'sans-serif';
+    overflow: hidden;
+    background-color: #000;
+}
+
+.title {
+    padding: 3rem 13%;
+    margin: auto;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #c49b66;
+}
+
+.intro {
+    padding: 0.5rem 14%;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Partie Section Contact */
+
+.title1 {
+    color: #000;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    width: 840px;
+    border: 1px solid #fff;
+    padding: 32px 24px;
+    font-size: 14px;
+    color: #000;
+    background-color: rgb(255, 200, 127);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    border-color: #ffffff;
+    border-width: 4px;
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.form-container .form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #000;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+.form-container .form-group textarea{
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #000;
+    height: 96px;
+    border: 1px solid #000;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.form-container .form-group input::placeholder{
+    opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+    outline: none;
+    border: 1px solid #fff;
+}
+
+.form-container .form-submit-btn {
+    font-family: inherit;
+    color: #fff;
+    font-weight: 800;
+    width: 40%;
+    background: #000;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.form-container .form-submit-btn:hover {
+    background-color: #fff;
+    color: #01172b;
+    border-color: #fff;
+}
+
+/* Fin Partie Section Contact */
+
+
+/* Footer */
+
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+/* partie Javascript pour le texte animé */
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+/* Fin Footer */
+
+
+/* Bibliothèque Typed.js pour le texte animé */
 @keyframes rotate {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
@@ -422,24 +670,4 @@ button {
     }
 }
 
-.title {
-    padding: 3rem 13%;
-    margin: auto;
-    font-size: 2.2rem;
-    text-align: center;
-    color: #ffffff;
-}
-
-.intro {
-    padding: 0.5rem 14%;
-    margin: auto;
-    text-align: center;
-    color: #ffffff;
-
-}
-
-.text {
-    padding: 0.5rem 14%;
-    text-align: justify;
-    color: #ffffff;
-}
+/* Fin Bibliothèque Typed.js pour le texte animé */

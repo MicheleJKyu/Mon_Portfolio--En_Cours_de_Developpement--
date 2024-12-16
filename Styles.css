@@ -174,7 +174,9 @@ button {
     font-size: 1.5rem;
     /* Taille du texte */
     font-weight: 500;
-    /* Poids moyen pour le texte */
+    /* Taille du texte */
+    border-radius: 20px;
+    /* ajoute de l'arrondi dans les coins */
     background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255, 183, 89)70%);
     /* Dégradé d'arrière-plan */
     cursor: pointer;
@@ -186,7 +188,6 @@ button {
     transition: .6s;
     /* Transition pour les effets visuels */
     z-index: 1;
-
     /* Place le bouton au-dessus des éléments voisins */
     &:hover {
         box-shadow: 5px 6px 5px #c49b66;
@@ -199,6 +200,9 @@ button {
     /* Crée un cadre décoratif autour du bouton */
     position: absolute;
     /* Positionné par rapport au bouton */
+    background-position: relative;
+    border-radius: 20px;
+    /* ajoute de l'arrondi dans les coins */
     top: 60%;
     /* Position verticale du cadre */
     left: 53%;
@@ -311,6 +315,7 @@ button {
     /* Taille des icônes des réseaux sociaux */
     padding: 14px 15px;
     /* Espacement interne autour des icônes */
+    border-radius: 20px;
     background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255, 183, 89)70%);
     /* Dégradé en arrière-plan des icônes */
     cursor: pointer;
@@ -336,6 +341,7 @@ button {
     /* Hauteur légèrement supérieure à l'icône */
     border: 1px solid #c49b66;
     /* Bordure décorative autour de l'icône */
+    border-radius: 12px;
 }
 
 .social i:nth-child(1):after {
@@ -370,11 +376,10 @@ section.part2 {
 
 .send {
     display: flex;
-    
     flex-direction: column;
     align-items: center;
     padding-top: 0;
-    height: 100vh;
+    height: 105vh;
     font-family: 'poppins' , 'arial', 'sans-serif';
     overflow: hidden;
     background-color: #000;
@@ -449,6 +454,7 @@ div.button {
 .form-container .form-group label {
     display: block;
     margin-bottom: 7px;
+    padding-top: 7px;
     color: #000;
     font-weight: 600;
     font-size: 14px;
@@ -519,24 +525,24 @@ footer{
 }
 .socialIcons a{
     text-decoration: none;
-    padding:  10px;
-    background-color: white;
+    padding:  15px;
+    background-color: rgb(255, 200, 127);
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 35px;
 }
 .socialIcons a i{
     font-size: 2em;
     color: black;
-    opacity: 0,9;
+    opacity: 0,5;
 }
 /* Hover affect on social media icon */
 .socialIcons a:hover{
-    background-color: #111;
-    transition: 0.5s;
+    background-color: #fff;
+    transition: 1s;
 }
 .socialIcons a:hover i{
-    color: white;
-    transition: 0.5s;
+    color: #000;
+    transition: 1s;
 }
 .footerNav{
     margin: 30px 0;

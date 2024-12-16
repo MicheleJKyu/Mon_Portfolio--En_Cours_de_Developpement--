@@ -200,7 +200,6 @@ button {
     /* Crée un cadre décoratif autour du bouton */
     position: absolute;
     /* Positionné par rapport au bouton */
-    background-position: relative;
     border-radius: 20px;
     /* ajoute de l'arrondi dans les coins */
     top: 60%;
@@ -553,7 +552,7 @@ footer{
     list-style-type: none;
 }
 .footerNav ul li a{
-    color:white;
+    color: #fff;
     margin: 20px;
     text-decoration: none;
     font-size: 1.3em;
@@ -580,6 +579,7 @@ footer{
     margin: 0px 5px;
 }
 
+/* Fin Footer */
 
 /* partie Javascript pour le texte animé */
 
@@ -597,9 +597,6 @@ footer{
         margin: 4px;
     }
 }
-
-/* Fin Footer */
-
 
 /* Bibliothèque Typed.js pour le texte animé */
 @keyframes rotate {

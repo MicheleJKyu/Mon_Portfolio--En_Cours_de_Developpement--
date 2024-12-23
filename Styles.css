@@ -44,18 +44,15 @@
     /* Ajoute un espace égal entre les éléments enfants */
     align-items: center;
     /* Centre les éléments verticalement */
-    padding: 0 8%;
-    /* Ajoute un espacement horizontal */
     z-index: 9;
     /* Positionne l'en-tête au-dessus des autres éléments */
 }
 
 .navbar {
     background: #6b65657a; /* Définit une couleur d'arriere plan */
-    position: sticky;
+    position: fixed;
     height: 50px;
     top: 0;
-    text-align: right;
     min-height: 80px;
     /* Définit une hauteur minimale pour l'en-tête */
     width: 100%;
@@ -216,6 +213,8 @@ button {
     /* Bordure du cadre */
     z-index: -1;
     /* Place le cadre derrière le bouton */
+    border-top: 0;
+    border-left: 0;
 }
 
 .btn {
@@ -403,12 +402,7 @@ section.part2 {
     text-align: center;
 }
 
-i.fa-solid.fa-circle-arrow-up::before {
-    color: rgb(255, 200, 127);
-}
-
 /* Partie Section Contact */
-
 
 * {
     box-sizing: border-box;

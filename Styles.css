@@ -23,8 +23,6 @@
 }
 
 .container {
-    min-height: 100vh;
-    /* Définit une hauteur minimale correspondant à la hauteur de la fenêtre */
     width: 100%;
     /* Occupe toute la largeur disponible */
     background-repeat: no-repeat;
@@ -46,10 +44,11 @@
     /* Centre les éléments verticalement */
     z-index: 9;
     /* Positionne l'en-tête au-dessus des autres éléments */
+    border-bottom: 2px solid #c49b66;
 }
 
 .navbar {
-    background: #6b65657a; /* Définit une couleur d'arriere plan */
+    background: #111; /* Définit une couleur d'arriere plan */
     position: fixed;
     height: 50px;
     top: 0;
@@ -67,6 +66,7 @@
     /* Ajoute un espacement horizontal */
     z-index: 9;
     /* Positionne l'en-tête au-dessus des autres éléments */
+    border-bottom: 2px solid #c49b66;
 }
 
 .logo a {
@@ -74,7 +74,7 @@
     /* Définit une taille de police pour le logo */
     font-weight: 600;
     /* Applique un poids de police semi-gras */
-    color: #ffffff;
+    color: #dfab67;
     /* Définit la couleur du logo en blanc */
 }
 
@@ -166,7 +166,7 @@ button {
     /* Largeur du bouton */
     height: 45px;
     /* Hauteur du bouton */
-    margin: 50px 0;
+    margin: 0 0;
     /* Marge verticale */
     font-size: 1.5rem;
     /* Taille du texte */
@@ -356,6 +356,20 @@ button {
     /* Rotation animée inversée en alternance infinie */
 }
 
+.buttoncv {
+    height: 45px;
+    width: 280px;
+    margin: 50px 0;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    background-color: rgb(255, 200, 127);
+    border-radius: 20px;
+    font-size: 22px;
+}
+
 .text {
     padding: 0.5rem 14%;
     text-align: justify;
@@ -399,7 +413,17 @@ section.part2 {
 }
 
 .cvbutton {
-    text-align: center;
+    height: 45px;
+    width: 280px;
+    margin: auto;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    background-color: rgb(255, 200, 127);
+    border-radius: 20px;
+    font-size: 22px;
 }
 
 /* Partie Section Contact */
@@ -481,6 +505,10 @@ div.button {
     border: 1px solid #000;
     background-color: transparent;
     font-family: inherit;
+}
+
+.form-container .form-group textarea:focus {
+    border: 1px solid #fff;   
 }
 
 .form-container .form-group input::placeholder{

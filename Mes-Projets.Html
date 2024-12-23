@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Déclare le type de document comme HTML5 -->
+<html lang="fr">
+<!-- Définit la langue de la page comme français -->
 <head>
+    <!-- Définit l'encodage des caractères comme UTF-8 -->
     <meta charset="UTF-8">
+    <!-- Règle le viewport pour assurer une compatibilité mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Définit le titre de la page affiché dans l'onglet du navigateur -->
     <title>Portfolio</title>
+    <!-- Lien vers la feuille de styles CSS -->
+    <link rel="stylesheet" href="projets.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <div class="navbar">
+                <!-- Logo avec un lien vers le haut -->
+                <div class="logo">
+                    <a href="/Portfolio.Html" type="scrollup">Michèle</a>
+                </div>
+                <!-- Liste des liens de navigation -->
+                <ul>
+                    <li><a href="/Portfolio.Html" type="scrollUp">Accueil</a></li>
+                    <li><a href="#present">Présentation</a></li>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="/Mes-Projets.Html">Mes Projets</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                <!-- Icône du menu burger -->
+                <div class="fa-solid fa-bars"></div>
+            </div>
+        </div>
+
+        <section class="work-section" id="work"></section>
+            <div class="made">
+                <h1>Projets Réalisés</h1>            
+                    <div class="work_card">
+                        <img src="Site-vitrine.png" alt="" class="work_img">
+                        <h3 class="work_title"></h3>
+                        <a href="#" class="workbutton">
+                            Demo <box-icon name='right-arrow-alt'></box-icon>
+                        </a>
+                    </div>
+                    
+                </div>
+
+            <div class="next">    
+                <h1>Prochains Projets</h1>
+                    <div></div>
+                    
+                </div>
+
+        </section>
+
+        <div>
+            <section part="footer">
+                <footer>
+                    <div class="footerContainer">
+                        <div class="socialIcons">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="footerNav">
+                            <ul><li><a href="">Accueil</a></li>
+                                <li><a href="">Présentation</a></li>
+                                <li><a href="">À Propos</a></li>
+                                <li><a href="">Compétences</a></li>
+                                <li><a href="">Me Contacter/Me Recruter</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="footerBottom">
+                        <p>Copyright &copy; Conçu pendant ma formation PP Numérique AFPA.</p> 
+                        <p>Octobre 2024 à Février 2025.</p>
+                        <p> Par <span class="designer">Michèle</span></p>
+                    </div>
+            </section>
+        </div>
+    </div>
+    </div>
 </body>
 </html>

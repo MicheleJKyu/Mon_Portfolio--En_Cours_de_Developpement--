@@ -527,7 +527,7 @@ div.button {
     width: 40%;
     background: #000;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .form-container .form-submit-btn:hover {

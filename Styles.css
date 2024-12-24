@@ -356,7 +356,7 @@ button {
     /* Rotation animée inversée en alternance infinie */
 }
 
-.buttoncv {
+.buttoncv { /* 1er bouton "Télécharger mon CV" */
     height: 45px;
     width: 280px;
     margin: 50px 0;
@@ -412,7 +412,7 @@ section.part2 {
     color: #ffffff;
 }
 
-.cvbutton {
+.cvbutton { /* 2ème bouton "Télécharger mon CV" */
     height: 45px;
     width: 280px;
     margin: auto;

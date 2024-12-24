@@ -412,6 +412,44 @@ section.part2 {
     color: #ffffff;
 }
 
+/* Section partie Compétences */
+
+.conteudo {
+    width: 350px;
+}
+
+.carrousel {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    overflow-y: auto;
+    overflow-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.carrousel ::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    scroll-snap-align: start;
+    border-radius: 30px;
+    min-height: 200px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:nth-child(odd) {
+    background: linear-gradient(90deg, rgb(226, 162, 79) 0%, rgb(247, 162, 52)70%);
+}
+
+.card:nth-child(even) {
+    background: linear-gradient(90deg, rgb(247, 162, 52) 0%, rgb(226, 162, 79) 70%)
+}
+
 .cvbutton { /* 2ème bouton "Télécharger mon CV" */
     height: 45px;
     width: 280px;
@@ -425,6 +463,8 @@ section.part2 {
     border-radius: 20px;
     font-size: 22px;
 }
+
+/* Fin section partie Compétences */
 
 /* Partie Section Contact */
 

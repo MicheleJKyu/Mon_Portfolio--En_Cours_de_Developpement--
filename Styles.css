@@ -422,8 +422,9 @@ section.part2 {
     display: grid;
     grid-auto-flow: column;
     scroll-behavior: auto;
+    gap: 1.2rem;
     overflow-y: auto;
-    overflow-x: contain;
+    overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
 }
@@ -450,7 +451,10 @@ section.part2 {
     background: linear-gradient(90deg, rgb(247, 162, 52) 0%, rgb(226, 162, 79) 70%)
 }
 
-.cvbutton { /* 2ème bouton "Télécharger mon CV" */
+
+
+/* 2ème bouton "Télécharger mon CV" */
+.cvbutton { 
     height: 45px;
     width: 280px;
     margin: auto;

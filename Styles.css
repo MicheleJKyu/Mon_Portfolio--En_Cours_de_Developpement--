@@ -376,12 +376,12 @@ button {
     color: #ffffff;
 }
 
-section.part1 {
+section.colorone {
     background-color: #111;
     padding-bottom: 40px;
 }
 
-section.part2 {
+section.colortwo {
     background-color: #000;
     padding-bottom: 40px;
 }
@@ -414,8 +414,11 @@ section.part2 {
 
 /* Section partie Compétences */
 
-.conteudo {
+.conteneurcaroussel {
     width: 350px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px 300px;
+    gap: 15px;
 }
 
 .carrousel {
@@ -438,8 +441,9 @@ section.part2 {
     border-radius: 30px;
     min-height: 200px;
     min-width: 100px;
-    display: flex;
+    display: grid;
     align-items: center;
+
     justify-content: center;
 }
 
@@ -656,7 +660,7 @@ footer{
 
 /* Fin Footer */
 
-/* partie Javascript pour le texte animé */
+
 
 @media (max-width: 700px){
     .footerNav ul{

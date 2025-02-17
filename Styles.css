@@ -2,361 +2,244 @@
 /* Importation de la police "Poppins" depuis Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+/* commandes supprimant la mise en forme par default de la page web */
 * {
     margin: 0;
-    /* Supprime les marges par défaut */
     padding: 0;
-    /* Supprime les espacements internes par défaut */
     box-sizing: border-box;
-    /* Inclut les bordures et paddings dans les dimensions */
     text-decoration: none;
-    /* Supprime les décorations de texte (ex. soulignement des liens) */
     list-style: none;
-    /* Supprime les puces des listes */
     font-family: 'poppins';
-    /* Applique la police "Poppins" à tous les éléments */
 }
+
+/* Page d'accueil - corps de la 1ère partie */
 
 .overlay {
     background: #000;
-    /* Définit une couleur d'arrière-plan sur la partie Overlay */
 }
 
 .container {
     width: 100%;
-    /* Occupe toute la largeur disponible */
     background-repeat: no-repeat;
-    /* Empêche la répétition de l'image d'arrière-plan */
     position: relative;
-    /* Positionne le conteneur pour permettre le positionnement absolu d'enfants */
 }
+
+/* Barre de navigation de la page */
 
 .header {
     min-height: 80px;
-    /* Définit une hauteur minimale pour l'en-tête */
     width: 100%;
-    /* Occupe toute la largeur disponible */
     display: flex;
-    /* Utilise flexbox pour aligner les éléments enfants */
     justify-content: space-between;
-    /* Ajoute un espace égal entre les éléments enfants */
     align-items: center;
-    /* Centre les éléments verticalement */
     z-index: 9;
-    /* Positionne l'en-tête au-dessus des autres éléments */
     border-bottom: 2px solid #c49b66;
 }
 
 .navbar {
-    background: #111; /* Définit une couleur d'arriere plan */
+    background: #111;
     position: fixed;
     height: 50px;
     top: 0;
     min-height: 80px;
-    /* Définit une hauteur minimale pour l'en-tête */
     width: 100%;
-    /* Occupe toute la largeur disponible */
     display: flex;
-    /* Utilise flexbox pour aligner les éléments */
     justify-content: space-between;
-    /* Ajoute un espace égal */
     align-items: center;
-    /* Centre les éléments verticalement */
     padding: 0 8%;
-    /* Ajoute un espacement horizontal */
     z-index: 9;
-    /* Positionne l'en-tête au-dessus des autres éléments */
     border-bottom: 2px solid #c49b66;
 }
 
 .logo a {
     font-size: 2.5rem;
-    /* Définit une taille de police pour le logo */
     font-weight: 600;
-    /* Applique un poids de police semi-gras */
     color: #dfab67;
-    /* Définit la couleur du logo en blanc */
 }
 
 ul li {
     display: inline-block;
-    /* Affiche les éléments de liste sur une seule ligne */
 }
 
 ul li a {
     margin: 0 20px;
-    /* Ajoute un espacement horizontal entre les liens */
     font-size: 1.3rem;
-    /* Définit une taille de police pour les liens */
     color: #ffffff;
-    /* Définit la couleur des liens en blanc */
     transition: .6s;
-    /* Applique une transition de 0,6 seconde pour les effets */
     position: relative;
-    /* Positionne les liens pour permettre des pseudo-éléments relatifs */
 }
 
 ul li a:after {
     position: absolute;
-    /* Place le pseudo-élément par rapport au lien */
     content: '';
-    /* Crée une ligne décorative sous le lien */
     height: 3px;
-    /* Définit la hauteur de la ligne */
     width: 0%;
-    /* La ligne est invisible au départ */
     top: 100%;
-    /* Positionne la ligne juste sous le texte */
     right: 0;
-    /* Aligne à droite */
-    background-color: #27a7a7;
-    /* Couleur de la ligne */
+    background-color: #c49b66;
     border-radius: 3px;
-    /* Arrondi les extrémités de la ligne */
     transition: .3s;
-    /* Transition pour les changements de largeur */
 }
 
 ul li a:hover:after {
     width: 100%;
-    /* Étend la ligne sur toute la largeur du lien au survol */
 }
 
 ul li a:hover {
-    color: #27a7a7;
-    /* Change la couleur du lien au survol */
+    color: #c49b66;
 }
 
+/* FIN - Barre de navigation de la page */
+
+/* Animation JS particules sur les parties en fond noir */
 #particles-js {
     position: absolute;
-    /* Place l'élément en arrière-plan */
     top: 0;
-    /* Aligne en haut */
     left: 0;
-    /* Aligne à gauche */
     height: 100vh;
-    /* Occupe toute la hauteur visible */
     width: 100%;
-    /* Occupe toute la largeur visible */
     z-index: 1;
-    /* Place derrière les autres éléments */
 }
 
+
+/* Liens des réseaux sociaux LinkedIn + GitHub */
 .header .fa-bars {
     padding: 16px;
-    /* Espacement interne */
     z-index: 9;
-    /* Place au-dessus d'autres éléments */
     font-size: 19px;
-    /* Taille de l'icône */
-    color: #ffffff;
-    /* Couleur blanche pour l'icône */
+    color: #fff;
     cursor: pointer;
-    /* Affiche un pointeur au survol */
-    border: 1px solid #ffffff;
-    /* Ajoute une bordure blanche */
+    border: 1px solid #fff;
     backdrop-filter: blur(5px);
-    /* Applique un flou à l'arrière-plan */
     display: none;
-    /* Cache l'élément par défaut */
 }
 
+/* Bouton me recruter */
 button {
     width: 200px;
-    /* Largeur du bouton */
     height: 45px;
-    /* Hauteur du bouton */
     margin: 0 0;
-    /* Marge verticale */
     font-size: 1.5rem;
-    /* Taille du texte */
     font-weight: 500;
-    /* Taille du texte */
     border-radius: 20px;
-    /* ajoute de l'arrondi dans les coins */
     background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255, 183, 89)70%);
-    /* Dégradé d'arrière-plan */
     cursor: pointer;
-    /* Curseur interactif */
     border: none;
-    /* Supprime les bordures */
     position: relative;
-    /* Nécessaire pour les enfants positionnés */
     transition: .6s;
-    /* Transition pour les effets visuels */
     z-index: 1;
-    /* Place le bouton au-dessus des éléments voisins */
 
-}
+    &:hover {
+        box-shadow: 5px 6px 5px #c49b66;
+    }
 
-&:hover {
-    box-shadow: 5px 6px 5px #c49b66;
-    /* Ombre au survol */
 }
 
 .hero-btn button::after {
     content: '';
-    /* Crée un cadre décoratif autour du bouton */
     position: absolute;
-    /* Positionné par rapport au bouton */
     border-radius: 20px;
-    /* ajoute de l'arrondi dans les coins */
     top: 60%;
-    /* Position verticale du cadre */
     left: 53%;
-    /* Position horizontale du cadre */
     transform: translate(-50%, -50%);
-    /* Centre le cadre */
     width: 100%;
-    /* Largeur du cadre */
     height: 105%;
-    /* Hauteur légèrement plus grande que le bouton */
     border: 1px solid #c49b66;
-    /* Bordure du cadre */
     z-index: -1;
-    /* Place le cadre derrière le bouton */
     border-top: 0;
     border-left: 0;
 }
 
 .btn {
     height: 100px;
-    /* Taille verticale */
     width: 100px;
-    /* Taille horizontale */
     background-color: #c49b66;
-    /* Couleur de fond */
     border-radius: 50%;
-    /* Forme circulaire */
     display: flex;
-    /* Conteneur flex pour le centrage */
     justify-content: center;
-    /* Centre horizontalement le contenu dans le bouton */
     align-items: center;
-    /* Centre verticalement le contenu dans le bouton */
     position: fixed;
-    /* Positionne le bouton à un emplacement fixe par rapport à la fenêtre */
     right: 20px;
-    /* Espace entre le bouton et le bord droit de la fenêtre */
     bottom: 20px;
-    /* Espace entre le bouton et le bord inférieur de la fenêtre */
     cursor: pointer;
-    /* Change le curseur en pointeur pour indiquer l'interactivité */
 }
 
 /* flèche de scroll up A MODIFIER */
 .icone {
     width: 50px;
-    /* Définit la largeur de l'image ou de l'icône */
 }
 
 .Hero-Header {
     padding: 9% 8%;
-    /* Ajoute un espacement autour du contenu, haut-bas et gauche-droite */
     z-index: 9 !important;
-    /* Priorité élevée pour superposer cet élément */
     font-size: 2rem;
-    /* Taille de police par défaut pour le contenu */
 }
 
 .Hero-Header h1 {
     color: #fff;
-    /* Texte blanc pour le titre principal */
     z-index: 9 !important;
-    /* Priorité pour superposition */
-    margin: 60px;
-    /* Espacement autour du titre */
+    margin-top: 20px;
+    margin-bottom: 100px;
     font-size: 5.5rem;
-    /* Taille importante pour le titre */
 }
 
 .Hero-Header h1 span {
     background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255, 183, 89)70%);
-    /* Dégradé de couleurs pour le texte */
     background-clip: text;
     -webkit-background-clip: text;
-    /* Découpe l'arrière-plan au niveau du texte */
     -webkit-text-fill-color: transparent;
-    /* Rend le texte transparent pour afficher le dégradé */
 }
 
 .Hero-Header h3 {
     font-size: 3rem;
-    /* Taille de police pour le sous-titre */
     color: #fff;
-    /* Texte blanc pour le sous-titre */
     font-weight: 300;
-    /* Police fine pour un aspect léger */
     text-transform: uppercase;
-    /* Convertit le texte en majuscules */
 }
 
 #text {
     font-size: 3rem;
-    /* Taille de police pour le texte animé */
     color: #fff;
-    /* Texte blanc */
     font-weight: 600;
-    /* Police semi-gras */
 }
 
 .social {
     display: flex;
-    /* Disposition en ligne pour les icônes sociales */
     align-items: center;
-    /* Aligne les icônes verticalement */
     gap: 30px;
-    /* Espacement entre les icônes */
     margin-top: 50px;
-    /* Espace entre la section et les éléments précédents */
 }
 
 .social i {
     font-size: 24px;
-    /* Taille des icônes des réseaux sociaux */
     padding: 14px 15px;
-    /* Espacement interne autour des icônes */
     border-radius: 20px;
     background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255, 183, 89)70%);
-    /* Dégradé en arrière-plan des icônes */
     cursor: pointer;
-    /* Change le curseur pour indiquer l'interactivité */
     position: relative;
-    /* Nécessaire pour positionner l'effet ::after */
 }
 
 .social i::after {
     content: '';
-    /* Ajoute un contenu vide pour un effet de bordure animée */
     position: absolute;
-    /* Permet un positionnement absolu par rapport à l'élément parent */
     top: 50%;
-    /* Centre verticalement l'effet */
     left: 50%;
-    /* Centre horizontalement l'effet */
     transform: translate(-50%, -50%);
-    /* Ajuste l'effet pour qu'il soit parfaitement centré */
     width: 110%;
-    /* Taille légèrement supérieure à l'icône */
     height: 110%;
-    /* Hauteur légèrement supérieure à l'icône */
     border: 1px solid #c49b66;
-    /* Bordure décorative autour de l'icône */
     border-radius: 12px;
 }
 
 .social i:nth-child(1):after {
     animation-delay: 0.2s;
-    /* Délai avant le démarrage de l'animation pour la première icône */
     animation: rotate 5s infinite alternate;
-    /* Rotation animée en alternance infinie */
 }
 
 .social i:nth-child(2):after {
     animation-delay: 0.5s;
-    /* Délai avant le démarrage de l'animation pour la deuxième icône */
     animation: rotate 5s infinite alternate-reverse;
-    /* Rotation animée inversée en alternance infinie */
 }
 
 /* 1er bouton "Télécharger mon CV" */
@@ -370,181 +253,158 @@ button {
     display: flex;
     justify-content: center;
     color: #000;
-    background-color: rgb(255, 200, 127);
+    background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255, 183, 89) 70%);
     border-radius: 20px;
     font-size: 22px;
+    transition: .6s;
+
+    &:hover {
+        box-shadow: 5px 6px 5px #c49b66;
+    }
 }
 
-.text {
-    padding: 0.5rem 14%;
-    text-align: justify;
-    color: #ffffff;
-}
 
+/* Articles - part-one + part-two + part-three */
 .part-one {
     background-color: #111;
-    padding-top: 15px;
-    padding-bottom: 50px;
+    padding-top: 2%;
+    padding-bottom: 15%;
 }
 
 .part-two {
     background-color: #000;
-    padding-bottom: 40px;
+    padding-top: 2%;
+    padding-bottom: 35%;
 }
 
 .part-three {
     background-color: #111;
     padding-top: 15px;
     padding-bottom: 50px;
+    
 }
 
-.send {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 0;
-    height: 105vh;
-    font-family: 'poppins' , 'arial', 'sans-serif';
-    overflow: hidden;
-    background-color: #000;
-}
-
+/* Grands titres des articles  */
 .title {
-    padding: 45px 13%;
-    margin: auto;
-    font-size: 45px;
+    padding: 30px 13%;
+    margin: 25px;
+    font-size: 70px;
     color: rgb(255, 200, 127);
     text-align: center;
 }
 
+/* Introduction de la page - première petite présentation */
 .intro {
-    padding: 0.5rem 14%;
+    padding: 0.5rem 17%;
+    font-size: 23px;
     margin: auto;
     text-align: center;
     color: #ffffff;
 }
 
-/* Section partie Compétences ( en cours de refonte ) */
+/* selectionne tout les textes des articles */
+.text {
+    padding: 0.5rem 14%;
+    font-size: 23px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+/* FIN - Articles - part-one + part-two + part-three */
+
+
+/* Section partie Compétences ( Modifs en cours ) */
+
+.part-three {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container-swiper {
+    padding: 35px;
+    margin: 25px;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 900px;
+    margin: 0 70px 35px;
+}
 
 .card-list .card-item {
     color: #000;
-    width: 400px;
+    width: 100px;
+    height: 300px;
     padding: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
-    background: linear-gradient(90deg, rgb(226, 162, 79) 0%, rgb(247, 162, 52)70%);
-    border: 1px solid #000;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255, 183, 89) 40%);
+    border: 3px solid #fff;
 }
 
-
-
-
-
-
-
-
-/* swiper slide - partie animation de swipe gauche droite -
-
-.slider-wrapper {
-    width: 350px;
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px 300px 300px;
-    gap: 25px;
+.card-list .card-item .subtitle {
+    font-family: 'poppins';
+    font-size: 35px;
 }
 
-.carrousel {
-    display: grid;
-    grid-auto-flow: column;
-    scroll-behavior: auto;
-    gap: 1.2rem;
-    overflow-y: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-}
-
-.carrousel ::-webkit-scrollbar {
-    display: none;
-}
-
-.animedcards {
-    scroll-snap-align: start;
-    border-radius: 30px;
-    min-height: 200px;
-    min-width: 100px;
-    display: grid;
-    justify-content: center;
-}
-
-.subtitle {
+.card-list .card-item .secondsubtitle {
+    font-family: 'poppins';
+    font-size: 20px;
+    display: flex;
     text-align: center;
-    margin: auto;
-    padding: 30px;
-    font-size: 200%;
 }
 
-.secondsubtitle {
-    font-size: 120%;
-}
-
-.animedcards:nth-child(odd) {
-    background: linear-gradient(90deg, rgb(226, 162, 79) 0%, rgb(247, 162, 52)70%);
-}
-
-.animedcards:nth-child(even) {
-    background: linear-gradient(90deg, rgb(247, 162, 52) 0%, rgb(226, 162, 79) 70%)
-}
-
-*/
 
 /* 2ème bouton "Télécharger mon CV" */
 .cvbuttontwo { 
     height: 45px;
     width: 280px;
     margin: auto;
-    margin-top: 150px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
     text-decoration: none;
     align-items: center;
     display: flex;
     justify-content: center;
     color: #000;
-    background-color: rgb(255, 200, 127);
+    background: linear-gradient(90deg, rgb(255, 200, 127) 0%, rgb(255, 183, 89) 70%);
     border-radius: 20px;
     font-size: 22px;
+    transition: .6s;
+
+    &:hover {
+        box-shadow: 5px 6px 5px #c49b66;
+    }
 }
 
 /* Fin section partie Compétences */
 
+
+
 /* Partie Section Contact */
 
-.conteneurcaroussel {
-    grid-auto-flow: column;
-    scroll-behavior: auto;
-    overflow-y: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-}
-
-.carrousel::-webkit-scrollbar {
-    display: none;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-*:focus {
-    outline: none;
+.send {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    font-family: 'poppins' , 'arial', 'sans-serif';
+    overflow: hidden;
+    background-color: #000;
 }
 
 h1.title1 {
     margin-top: 35px;
     margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
     font-size: 45px;
     color: rgb(255, 200, 127);
 }
@@ -567,7 +427,7 @@ div.button {
     padding: 20px 24px;
     font-size: 14px;
     color: #000;
-    background-color: rgb(255, 200, 127);
+    background: linear-gradient(80deg, rgb(255, 200, 127) 0%, rgb(255, 183, 89) 7%);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -575,6 +435,7 @@ div.button {
     border-radius: 16px;
     border-color: #ffffff;
     border-width: 4px;
+    margin-bottom: 20px;
 }
 
 .form-container .form {
@@ -588,7 +449,7 @@ div.button {
     padding-top: 7px;
     color: #000;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .form-container .form-group input {
@@ -628,17 +489,17 @@ div.button {
 
 .form-container .form-submit-btn {
     font-family: inherit;
-    color: #000;
+    color: #fff;
     font-weight: 800;
     width: 40%;
-    background: rgb(255, 200, 127);
+    background: #000;
     cursor: pointer;
     border-radius: 20px;
 }
 
 .form-container .form-submit-btn:hover {
     background-color: #fff;
-    color: #01172b;
+    color: #000;
     border-color: #fff;
 }
 
@@ -661,7 +522,7 @@ footer{
 .socialIcons a{
     text-decoration: none;
     padding:  15px;
-    background-color: rgb(255, 200, 127);
+    background-color: rgb(255, 183, 89);
     margin: 10px;
     border-radius: 35px;
 }
@@ -688,7 +549,6 @@ footer{
     list-style-type: none;
 }
 .footerNav ul li a{
-    color: #fff;
     margin: 20px;
     text-decoration: none;
     font-size: 1.3em;
@@ -718,7 +578,27 @@ footer{
 
 /* Fin Footer */
 
+/* Bibliothèque Typed.js pour le texte animé */
 
+/*@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+#text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid black;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+} */
+
+
+/* partie pour l'animation des liens des réseaux sociaux */
 
 @media (max-width: 700px){
     .footerNav ul{
@@ -735,89 +615,64 @@ footer{
     }
 }
 
-/* Bibliothèque Typed.js pour le texte animé */
 @keyframes rotate {
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
-        /* Définit une rotation complète de 360° */
     }
 }
 
 @media (max-width:1100px) {
     .header {
         position: relative;
-        /* Place l'en-tête dans le flux du document */
         background-color: #050f19;
-        /* Arrière-plan foncé pour les petits écrans */
     }
 
     .header .fa-bars {
         display: block;
-        /* Rend visible l'icône du menu burger */
     }
 
     .header button {
         margin-left: 100px;
-        /* Ajoute un espacement à gauche pour le bouton */
     }
 
     ul {
         position: absolute;
-        /* Positionne la liste de navigation en dehors du flux normal */
         top: 100%;
-        /* Place la liste directement sous l'en-tête */
         left: 0;
-        /* Alignement à gauche de l'écran */
         background-color: rgba(255, 255, 255, 0.2);
-        /* Arrière-plan semi-transparent pour la liste */
         z-index: 999;
-        /* Assure que la liste est au-dessus des autres éléments */
         border-bottom: 0.1px solid rgba(131, 131, 131, 1);
-        /* Ligne de séparation subtile */
         backdrop-filter: blur(100px);
-        /* Floute légèrement l'arrière-plan sous la liste */
         width: 100%;
-        /* La liste occupe toute la largeur */
         opacity: 0;
-        /* Cache la liste par défaut */
         transition: .3s;
-        /* Animation de transition fluide */
     }
 
     .fa-bars {
         display: block;
-        /* Affiche l'icône du menu burger pour les petits écrans */
     }
 
     ul li {
         display: block;
-        /* Chaque élément de liste occupe une ligne entière */
         margin: 10px 0;
-        /* Espacement vertical entre les éléments */
         padding: 15px 6%;
-        /* Espacement interne pour une meilleure lisibilité */
         border-bottom: 0.1px solid #999;
-        /* Ligne de séparation entre les éléments */
     }
 
     ul li a {
         font-size: 1.5rem;
-        /* Taille de texte plus grande pour une meilleure visibilité */
     }
 
     ul li:last-child {
         border: none;
-        /* Supprime la bordure inférieure pour le dernier élément */
     }
 
     .show {
         opacity: 1;
-        /* Rendu visible des éléments lorsque le menu est activé */
     }
 
     .container {
         background-position: center;
-        /* Centre l'image d'arrière-plan */
     }
 }
 

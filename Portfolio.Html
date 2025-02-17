@@ -35,7 +35,7 @@
                                     <div class="navbar">
                                         <!-- Logo avec un lien vers le haut -->
                                             <div class="logo">
-                                                <a href="index.Html">Michèle</a>
+                                                <a href="portfolio.html">Michèle</a>
                                             </div>
 
                                         <!-- Liste des liens de navigation de la barre de navigation "en balise div" -->
@@ -89,23 +89,44 @@
             </header>
         <!-- FIN - Partie header - barre de navigation -->
 
+        <!-- Bibliothèque Typed.js pour le texte animé -->
+        <!-- Typed js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+
+        <script>
+            let menu = document.querySelector('ul');
+            let bars = document.querySelector('.header .fa-bars');
+
+            bars.addEventListener('click', () => {
+                menu.classList.toggle('show')
+            });
+
+            var typed = new Typed('#text', {
+                strings: ['Développeuse Web.', 'développeuse Mobile.', 'Développeuse Front-End.', 'Développeuse Back-End.', 'Développeuse d\'applications.'],
+                typeSpeed: 25,
+                backSpeed: 25,
+                smartBackspace: true,
+                loop: true,
+            })
+
+        </script>
+
         <!-- Partie Main ( Corps Principal de la page avec les sections ) -  -->
             <main>
                 <section>
 
                     <!-- Partie Présentation -->
-                        <article > <!-- partie en couleur background grise : répartition de 2 couleurs sur les 4 partie de la page : partie principale, présentation, à propos, et contact  -->              
-                            <div class="part-one">
+                        <article class="part-one"> <!-- partie en couleur background grise : répartition de 2 couleurs sur les 4 partie de la page : partie principale, présentation, à propos, et contact  -->              
+                            <div>
                                 <!-- Titre de la partie présentation -->
                                     <h1 class="title">Présentation</h1>
 
                                     <!-- Paragraphes de présentation -->
-                                        <p class="intro">Avant toute chose, je me présente, j'ai 27 ans et je suis actuellement en
+                                        <p class="intro">Avant toute chose, je me présente : Je suis Michèle, j'ai 28 ans et je suis actuellement en
                                         reconversion développeuse web. D'Octobre 2024 à Février 2025, je suis une formation PP Découverte du
                                         Numérique.</p>
 
-                                        <p class="intro">Au fil de mon parcours et de mon expérience, je me suis orientée sur le domaine du
-                                        développement web et mobile. Je suis en recherche d'une alternance pour 2025.</p>
+                                        <p class="intro">Au fil de mon parcours et de mon expérience, je me suis orienté dans l'informatique. Je suis en recherche d'une alternance pour 2025.</p>
 
                                         <p class="intro">À travers mon portfolio, je vous présente mon parcours, mes compétences, ainsi que
                                         mes projets réalisés et mes futurs projets de développement..</p>
@@ -118,14 +139,13 @@
                     
 
                     <!-- Partie À Propos -->
-                    <article>
-                        <div class="part-two">
+                    <article class="part-two">
+                        <div>
                             <!-- Titre de la partie about -->
                             <h1 class="title">À Propos</h1>
 
                                 <!-- Paragraphes de la partie about -->
-                                    <p class="text"> Actuellement à la recherche d'une entreprise pour effectuer sur une alternance à
-                                        l'ENI.</p>
+                                    <p class="text"> Actuellement à la recherche d'une entreprise pour effectuer a formation en alternance. </p>
 
                                     <p class="text"> Passionnée d’informatique et des nouvelles technologies, je fais le choix de me
                                         diriger vers le métier de développeuse web, après des études dans la filière équine.</p>
@@ -137,12 +157,11 @@
                                         j'ai été faire un stage en informatique, qui m'a permis d'apprécier davantage
                                         le monde du numérique, à laquelle j'y touchais en loisir depuis mon plus jeune âge.</p>
 
-                                    <p class="text"> La formation que je cherche à faire sera à l'ENI, sur 2 ans consécutifs.
-                                        J'envisage aussi de poursuivre la formation avec une cerification niveau BAC+3, avec
-                                        1 an en alternance supplémentaire.</p>
+                                    <p class="text"> Je recherche actuellement un bon organiqme de formation, en alternance.
+                                        J'envisage aussi de poursuivre la formation avec une cerification avec un niveau supplémentaire.</p>
 
                                     <p class="text">Une fois les compétences et la certification obtenus, toute l'expérience aquise
-                                        me permettera de faire carrière en tant que développeuse web.</p>
+                                        me permettera de faire carrière en tant que développeuse web, pour du long terme.</p>
                                 <!-- FIN Paragraphes de la partie about -->
                         </div>
                     </article>
@@ -150,82 +169,94 @@
 
                     <!-- Partie Compétences -->
                     <article class="part-three">
-                        <!-- container partie compétences - le wrap des cards "languages de programmation" animation swiper slider -->
-                            <div class="container">
+                        <h1 class="title">Compétences</h1>
+                        <!-- container partie compétences - le wrap des cards "languages de programmation" animation swiper slider -->      
+                        <div class="container-swiper">          
+                            <!-- Card slider HTML -->
+                                <div class="slider-wrapper">
+                    
+                                    <div class="card-list swiper-wrapper">
+                                        <!-- Card slider HTML -->
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">HTML</h1>
+                                        </div>
+                                        <!-- FIN - Card slider HTML -->
+                    
+                                        <!-- Card slider CSS -->
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">CSS</h1>
+                                        </div>
+                                        <!-- FIN - Card slider CSS -->
+                    
+                                        <!-- Card slider JavaScript -->
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">JavaScript</h1>
+                                            <h2 class="secondsubtitle">Phase d'apprentissage</h2>
+                                        </div>
+                                        <!-- FIN -  Card slider JavaScript -->
+                    
+                                        <!-- Card slider PHP -->
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">PHP</h1>
+                                            <h2 class="secondsubtitle">Phase de découverte</h2>
+                                        </div>
+                                        <!-- FIN -  Card slider PHP -->
+                    
+                                        <!-- Card slider GitHub -->
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">GitHub</h1>
+                                        </div>
+                                        <!-- FIN -  Card slider GitHub -->
+                    
+                                        <!-- Card slider Algorythmes -->
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">Algorythmes</h1>
+                                            <h2 class="secondsubtitle">Phase d'apprentissage</h2>
+                                        </div>
+                                        <!-- FIN -  Card slider Algorythmes -->
+                    
+                                    </div>
+                                </div>
+                            <!-- FIN - Card slider HTML -->
+                    
+                    
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                    
+                            <!-- Boutons de navigation -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                             
-                                <!-- Card slider HTML -->
-                                    <div class="slider-wrapper">
-                                        <div class="card-list">
-                                            <div class="card-item">
-                                                <!-- Ici : Logo du language programmation -->
-                                                <h1 class="subtitle">HTML</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <!-- Card slider HTML -->
+                    
+                        </div>
 
-                                <!-- Card slider CSS -->
-                                    <div class="slider-wrapper">
-                                        <div class="card-list">
-                                            <div class="card-item">
-                                                <!-- Ici : Logo du language programmation -->
-                                                <h1 class="subtitle">CSS</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <!-- Card slider CSS -->
-                                    
-                                <!-- Card slider JavaScript -->
-                                    <div class="slider-wrapper">
-                                        <div class="card-list">
-                                            <div class="card-item">
-                                                <h1 class="subtitle">JavaScript</h1>
-                                                <!-- Ici : Logo du language programmation -->
-                                                <h2 class="secondsubtitle">Phase d'apprentissage</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <!-- Card slider JavaScript -->
+                        <div class="bouton"> <!-- A MODIFIER !! -->
 
-                                <!-- Card slider PHP -->
-                                    <div class="slider-wrapper">
-                                        <div class="card-list">
-                                            <div class="card-item">
-                                                <h1 class="subtitle">PHP</h1>
-                                                <!-- Ici : Logo du language programmation -->
-                                                <h2 class="secondsubtitle">Phase découverte</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <!-- Card slider PHP -->
-                
-                                <!-- Card slider GitHub -->
-                                    <div class="slider-wrapper">
-                                        <div class="card-list">
-                                            <div class="card-item">
-                                                <!-- Ici : Logo du language programmation -->
-                                                <h1 class="subtitle">GitHub</h1>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <!-- Card slider GitHub -->
-                
-                                <!-- Card slider Algorythmes -->
-                                    <div class="slider-wrapper">
-                                        <div class="card-list">
-                                            <div class="card-item">
-                                                <h1 class="subtitle">Algorythmes</h1>
-                                                <!-- Ici : Logo de la compétence -->
-                                                <h2 class="secondsubtitle">Phase d'apprentissage</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <!-- Card slider Algorythmes -->
 
-                            </div>
-                        
-                        <!-- Partie bouton de téléchargement du PDF CV -->
+                            <!-- Partie bouton de téléchargement du PDF CV -->
                             <a class="cvbuttontwo" href="CV-michele-dev.pdf">Télécharger mon CV</a>
+                        </div>
+                    
+                        <!--  Lien du CDN - SwipperJS script -->
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                    
+                        <!-- lien custom Script JS -->
+                         <script src="swipe-slide.js"></script>
+
+                    </article>
+                    
+                        <!-- Partie script JS animation swippe droite-gauche compétences -->
+                        <!--  Lien du CDN - SwipperJS script -->
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                    
+                        <!-- lien custom Script JS -->
+                         <script src="swipe-slide.js"></script>
 
                     </article>
                     <!-- FIN - Partie Compétences -->
@@ -344,7 +375,7 @@
 
             </footer>
         <!-- FIN - Footer : Pied de page -->
-
+        
     </body>
 <!-- FIN - Partie body de la page principale -->
 

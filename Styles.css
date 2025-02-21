@@ -361,6 +361,15 @@ button {
     text-align: center;
 }
 
+/* positionnement correct flèches de navigation des cartes de compétences */
+.container-swiper {
+    position: relative;
+}
+
+div.swiper-button-next, div.swiper-button-prev {
+    color: #c49b66;
+}
+
 
 /* 2ème bouton "Télécharger mon CV" */
 .cvbuttontwo { 

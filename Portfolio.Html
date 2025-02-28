@@ -27,7 +27,7 @@
         <!-- Partie header - Haut de la page avec barre de navigation en div + partie principale -->
             <header>
                 <!-- Div de barre de navigation avec nom = container : pas de nav exprès par rapport au modèle trouvé \/ -->
-                    <div class="container">
+                    <div class="container" id="portfolio">
                         <div class="overlay">
 
                             <!-- Section d'en-tête -->
@@ -40,9 +40,10 @@
 
                                         <!-- Liste des liens de navigation de la barre de navigation "en balise div" -->
                                             <ul>
-                                                <li><a href="portfolio.html">Accueil</a></li> <!-- lien de l'acceuil du site -->
+                                                <li><a href="#portfolio">Accueil</a></li> <!-- lien de l'acceuil du site -->
                                                 <li><a href="#present">Présentation</a></li> <!-- Partie présentation / page principale -->
                                                 <li><a href="#about">À Propos</a></li> <!-- Partie à propos (de moi) / page principale -->
+                                                <li><a href="#skills">Compétences</a></li> <!-- Partie compétences / page principale -->
                                                 <li><a href="mes-projets.Html">Mes Projets</a></li> <!-- Page secondaire / Mes projets développement web et mobiles -->
                                                 <li><a href="#contact">Contact</a></li> <!-- Partie Contact / page principale -->
                                             </ul>
@@ -70,9 +71,8 @@
                                         </div>
 
                                     <!-- Lien de mon CV à télécharger -->
-                                        <div class="linkcv">
-                                            <!-- Lien à changer car Mise à jour du document-->
-                                            <a class="buttoncvone" href="CV-michele-dev.pdf">Télécharger mon CV</a>
+                                        <div class="hero-btn">
+                                            <a href="CV-Michèle JACQUES.pdf"><button class="buttoncvone">Télécharger mon CV</button></a>
                                         </div>
 
                                     <!-- Bouton principal -->
@@ -116,17 +116,17 @@
                 <section>
 
                     <!-- Partie Présentation -->
-                        <article class="part-one"> <!-- partie en couleur background grise : répartition de 2 couleurs sur les 4 partie de la page : partie principale, présentation, à propos, et contact  -->              
+                        <article class="part-one" id="present"> <!-- partie en couleur background grise : répartition de 2 couleurs sur les 4 partie de la page : partie principale, présentation, à propos, et contact  -->              
                             <div>
                                 <!-- Titre de la partie présentation -->
                                     <h1 class="title">Présentation</h1>
 
                                     <!-- Paragraphes de présentation -->
                                         <p class="intro">Avant toute chose, je me présente : Je suis Michèle, j'ai 28 ans et je suis actuellement en
-                                        reconversion développeuse web. D'Octobre 2024 à Février 2025, je suis une formation PP Découverte du
-                                        Numérique.</p>
+                                        reconversion développeuse web. D'Octobre 2024 à Février 2025, j'ai suivi la formation PP Découverte du
+                                        Numérique, à l'AFPA de Niort.</p>
 
-                                        <p class="intro">Au fil de mon parcours et de mon expérience, je me suis orienté dans l'informatique. Je suis en recherche d'une alternance pour 2025.</p>
+                                        <p class="intro">Au fil de mon parcours et de mon expérience, je me suis orienté dans l'informatique. Je suis en recherche d'une alternance pour mars 2025.</p>
 
                                         <p class="intro">À travers mon portfolio, je vous présente mon parcours, mes compétences, ainsi que
                                         mes projets réalisés et mes futurs projets de développement..</p>
@@ -139,7 +139,7 @@
                     
 
                     <!-- Partie À Propos -->
-                    <article class="part-two">
+                    <article class="part-two" id="about">
                         <div>
                             <!-- Titre de la partie about -->
                             <h1 class="title">À Propos</h1>
@@ -150,15 +150,16 @@
                                     <p class="text"> Passionnée d’informatique et des nouvelles technologies, je fais le choix de me
                                         diriger vers le métier de développeuse web, après des études dans la filière équine.</p>
 
-                                    <p class="text"> Peu après cette période, j'ai suivie une grande période de réflexion, pour trouver
+                                    <p class="text"> Peu après mon BAC PRO, j'ai suivie une grande période de réflexion, pour trouver
                                         un métier plus recherché et qui ait du sens pour moi.</p>
 
-                                    <p class="text"> Durant ma période Garentie Jeune, parmis les stages que j'ai pû suivre :
+                                    <p class="text"> Durant ma période Garentie Jeune (CEJ), parmis les stages que j'ai pû suivre :
                                         j'ai été faire un stage en informatique, qui m'a permis d'apprécier davantage
                                         le monde du numérique, à laquelle j'y touchais en loisir depuis mon plus jeune âge.</p>
 
-                                    <p class="text"> Je recherche actuellement un bon organiqme de formation, en alternance.
-                                        J'envisage aussi de poursuivre la formation avec une cerification avec un niveau supplémentaire.</p>
+                                    <p class="text"> Je compte entrer chez Arinfo à Niort, en alternance, durant 1 ans, 
+                                        pour obtenir le titre professionnel niveau 5 de développeuse web et web mobile.
+                                        J'envisage aussi de poursuivre une formation avec une cerification pour un niveau supplémentaire.</p>
 
                                     <p class="text">Une fois les compétences et la certification obtenus, toute l'expérience aquise
                                         me permettera de faire carrière en tant que développeuse web, pour du long terme.</p>
@@ -168,7 +169,7 @@
                     <!-- FIN - Partie À Propos -->
 
                     <!-- Partie Compétences -->
-                    <article class="part-three">
+                    <article class="part-three" id="skills">
                         <h1 class="title">Compétences</h1>
                         <!-- container partie compétences - le wrap des cards "languages de programmation" animation swiper slider -->      
                         <div class="container-swiper">          
@@ -219,6 +220,12 @@
                                             <h1 class="subtitle">Algorythmes</h1>
                                             <h2 class="secondsubtitle">Phase d'apprentissage</h2>
                                         </div>
+
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">Autres ...</h1>
+                                            <h2 class="secondsubtitle">languages que je souhaite apprendre ...</h2>
+                                        </div>
                                         <!-- FIN -  Card slider Algorythmes -->
                     
                                     </div>
@@ -233,20 +240,20 @@
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>                            
                     
+                        </div>                    
+                        <!-- Partie bouton de téléchargement du PDF CV -->
+                        <div class="hero-btn">
+                            <a href="CV-Michèle JACQUES.pdf"><button class="buttoncvone">Télécharger mon CV</button></a>
                         </div>
-
-                        <div class="bouton"> <!-- A MODIFIER !! -->
-
-
-                            <!-- Partie bouton de téléchargement du PDF CV -->
-                            <a class="cvbuttontwo" href="CV-michele-dev.pdf">Télécharger mon CV</a>
-                        </div>
+                        <!-- FIN - Partie bouton de téléchargement du PDF CV -->
                     
-                        <!--  Lien du CDN - SwipperJS script -->
+                        <!--  Lien du CDN - SwipperJS script // à décrire : mettre le n° de la version du CDN + sa provenance dans le READ ME -->
                         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
                     
                         <!-- lien custom Script JS -->
                          <script src="swipe-slide.js"></script>
+
+                        <!-- FIN - container partie compétences - le wrap des cards "languages de programmation" animation swiper slider -->
 
                     </article>
                     
@@ -261,7 +268,7 @@
                     <!-- FIN - Partie Compétences -->
 
                     <!-- Partie Formulaire -->
-                    <article class="send">
+                    <article class="send" id="contact">
                         <div class="part-four">
                             <!-- Titre contact -->
                             <h1 class="title1" id="contact">Contact</h1>
@@ -305,9 +312,9 @@
                                         <label>message</label>
                                         <textarea name="message" placeholder="message" required></textarea>
                                     </div>
-                                    <!-- FIN - saisie de texte - Prénom -->
+                                    <!-- FIN - saisie de texte - message -->
 
-                                    <!-- input pour incorporer pièce jointe - Prénom -->
+                                    <!-- input pour incorporer pièce jointe - Mettre du code BACK-END pour sécuriser cette partie du formulaire -->
                                 <!--<div class="form-group">
                                             <label>Ajouter une Pièce Jointe</label>
                                             <input type="file" name="file" placeholder="Choisir un fichier" required>
@@ -321,6 +328,15 @@
                                         </div>
                                 </form>
                                 <!-- FIN - Formulaire de contact -->
+
+                                <!-- Liens réseaux sociaux pro : LinkedIn + GitHub -->
+                            <div class="S-Icons">
+                                <!-- Lien LinkedIn -->
+                                    <a href="https://www.linkedin.com/in/mich%C3%A8le-jacques/"><i class="fa-brands fa-linkedin"></i></a>
+                                <!-- Lien GitHub -->
+                                    <a href="https://github.com/MicheleJKyu"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <!-- FIN - div liens réseaux sociaux -->
 
                             </div>
                             <!-- FIN - container du formulaire -->
@@ -343,22 +359,9 @@
                                 <!-- Lien LinkedIn -->
                                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
                                 <!-- Lien GitHub -->
-                                    <a href=""><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://github.com/MicheleJKyu"><i class="fa-brands fa-github"></i></a>
                             </div>
                         <!-- FIN - div liens réseaux sociaux -->
-
-                        <!-- Barre de navigation footer (pied de page) -->
-                            <div class="footerNav">
-                                <!-- Barre de navigation - Liste stylisé horizontalement -->
-                                    <ul>
-                                        <li><a href="">Accueil</a></li>
-                                        <li><a href="">Présentation</a></li>
-                                        <li><a href="">À Propos</a></li>
-                                        <li><a href="">Compétences</a></li>
-                                        <li><a href="">Me Contacter/Me Recruter</a></li>
-                                    </ul>                    
-                            </div>
-                        <!-- FIN - Barre de navigation footer -->
 
                     </div>
                 <!-- FIN - Container du footer -->

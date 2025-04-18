@@ -214,9 +214,25 @@ button {
 }
 
 .Hero-Header {
-    padding: 9% 8%;
-    z-index: 9 !important;
-    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px;
+    padding-bottom: 300px;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
+
+.profile-container {
+    height: auto;
+    flex: 0 0 auto;
+    text-align: right;
+    margin-right: 15%;
 }
 
 .Hero-Header h1 {
@@ -304,6 +320,19 @@ button {
     &:hover {
         box-shadow: 5px 6px 5px #c49b66;
     }
+}
+
+/* Photo de profil */
+.Hero-Header h1,
+.Hero-Header h3,
+.social,
+.hero-btn {
+    flex: 1;
+}
+
+.profile-img {
+    width: 650px;
+    height: auto;
 }
 
 

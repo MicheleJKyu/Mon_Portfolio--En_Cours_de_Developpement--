@@ -21,7 +21,6 @@
     </head>
 <!-- FIN - Partie Head de la page principale du site portfolio -->
 
-
 <!-- Partie body de la page principale -->
     <body>
         <!-- Partie header - Haut de la page avec barre de navigation en div + partie principale -->
@@ -58,29 +57,26 @@
 
                             <!-- partie principale de l'accueil de la page  -->
                                 <div class="Hero-Header">
-
-                                    <!-- Titre principal avec une mise en valeur -->
+                                    <!-- Left-side content -->
+                                    <div class="hero-content">
                                         <h1>Ce que j'aime : <span>Coder</span></h1>
-                                    <!-- Sous-titre animé -->
                                         <h3>Je suis&nbsp;<span id="text"></span></h3>
-
-                                    <!-- Liens sociaux -->
                                         <div class="social">
                                             <i class="fa-brands fa-linkedin">‌</i> <!-- Lien de mon LinkedIn -->
                                             <i class="fa-brands fa-github"></i> <!-- Lien de mon GitHub -->
                                         </div>
-
-                                    <!-- Lien de mon CV à télécharger -->
                                         <div class="hero-btn">
                                             <a href="CV-Michèle JACQUES.pdf"><button class="buttoncvone">Télécharger mon CV</button></a>
                                         </div>
-
-                                    <!-- Bouton principal -->
                                         <div class="hero-btn">
-                                            <button>Me Recruter</button>
+                                            <a href="#contact"><button>Me Recruter</button></a>
                                         </div>
+                                    </div>
 
-                                    <!-- ICI : Mettre flèche scroll on top ??? ( fleche qui remonte en heut de page ) ??? Je ne sais pas s'il se met ici ... -->
+                                    <!-- Right-side profile image -->
+                                    <div id="profile" class="profile-container">
+                                        <img src="profil-portfolio.png" alt="photo de profil" class="profile-img">
+                                    </div>
                                 </div>
                             <!-- FIN - partie principale de l'accueil de la page  -->
 
@@ -102,7 +98,7 @@
             });
 
             var typed = new Typed('#text', {
-                strings: ['Développeuse Web.', 'développeuse Mobile.', 'Développeuse Front-End.', 'Développeuse Back-End.', 'Développeuse d\'applications.'],
+                strings: ['Développeuse Web.', 'Développeuse Mobile.', 'Développeuse Front-End.', 'Développeuse Back-End.', 'Développeuse Full-Stack.', 'Développeuse d\'applications.'],
                 typeSpeed: 25,
                 backSpeed: 25,
                 smartBackspace: true,
@@ -126,12 +122,13 @@
                                         reconversion développeuse web. D'Octobre 2024 à Février 2025, j'ai suivi la formation PP Découverte du
                                         Numérique, à l'AFPA de Niort.</p>
 
-                                        <p class="intro">Au fil de mon parcours et de mon expérience, je me suis orienté dans l'informatique. Je suis en recherche d'une alternance pour mars 2025.</p>
+                                        <p class="intro">Au fil de mon parcours et de mon expérience, je me suis orienté dans l'informatique.
+                                            Je suis actuellement en pleine recherche d'alternance pour pouvoir continuer ma formation.</p>
 
                                         <p class="intro">À travers mon portfolio, je vous présente mon parcours, mes compétences, ainsi que
-                                        mes projets réalisés et mes futurs projets de développement..</p>
+                                        mes projets réalisés et mes futurs projets de développement.</p>
 
-                                        <p class="intro">Je vous invite donc à consulter mon site web.</p>
+                                        <p class="intro">Je vous invite à consulter mon site web.</p>
                                     <!-- FIN - Paragraphes de présentation -->
                             </div>
                         </article>
@@ -145,24 +142,27 @@
                             <h1 class="title">À Propos</h1>
 
                                 <!-- Paragraphes de la partie about -->
-                                    <p class="text"> Actuellement à la recherche d'une entreprise pour effectuer a formation en alternance. </p>
+                                    <p class="text"> Actuellement à la recherche d'une entreprise pour réaliser ma formation en alternance. </p>
 
-                                    <p class="text"> Passionnée d’informatique et des nouvelles technologies, je fais le choix de me
-                                        diriger vers le métier de développeuse web, après des études dans la filière équine.</p>
+                                    <p class="text"> Passionnée d'informatique et de nouvelles technologies, j'ai choisi de me
+                                        diriger vers le métier de développeuse web après des études dans la filière équine.</p>
 
-                                    <p class="text"> Peu après mon BAC PRO, j'ai suivie une grande période de réflexion, pour trouver
-                                        un métier plus recherché et qui ait du sens pour moi.</p>
+                                    <p class="text"> Peu après mon bac pro, j'ai suivi une longue période de réflexion pour trouver
+                                        un métier plus recherché sur le marché du travail et qui ait du sens pour moi.</p>
 
-                                    <p class="text"> Durant ma période Garentie Jeune (CEJ), parmis les stages que j'ai pû suivre :
-                                        j'ai été faire un stage en informatique, qui m'a permis d'apprécier davantage
-                                        le monde du numérique, à laquelle j'y touchais en loisir depuis mon plus jeune âge.</p>
+                                    <p class="text"> Durant ma période Garantie Jeune (CEJ), parmi les stages que j'ai pu effectuer,
+                                        j'ai réalisé un stage en informatique qui m'a permis d'apprécier davantage le monde du numérique,
+                                        que je découvrais déjà en loisir depuis mon plus jeune âge.</p>
 
-                                    <p class="text"> Je compte entrer chez Arinfo à Niort, en alternance, durant 1 ans, 
-                                        pour obtenir le titre professionnel niveau 5 de développeuse web et web mobile.
-                                        J'envisage aussi de poursuivre une formation avec une cerification pour un niveau supplémentaire.</p>
+                                    <p class="text"> Je suis une formation en alternance chez Arinfo à Niort pour un an,
+                                        afin d'obtenir le titre professionnel de niveau 5 ( BAC+2 RNCP ) de développeuse web et web mobile.
+                                        J'envisage également de poursuivre avec une formation certifiante pour atteindre un niveau supérieur.</p>
 
                                     <p class="text">Une fois les compétences et la certification obtenus, toute l'expérience aquise
                                         me permettera de faire carrière en tant que développeuse web, pour du long terme.</p>
+
+                                    <p class="text">Je suis mobile principalement dans un rayon de 150 à 200 kilomètres,
+                                        et ouverte à des opportunités dans toute la France, ayant pour projet de déménager et de gagner en indépendance. </p>
                                 <!-- FIN Paragraphes de la partie about -->
                         </div>
                     </article>
@@ -198,14 +198,62 @@
                                             <h2 class="secondsubtitle">Phase d'apprentissage</h2>
                                         </div>
                                         <!-- FIN -  Card slider JavaScript -->
+
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">JQuery</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
+                                        </div>
+
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">Vue-JS</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
+                                        </div>
+
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">Node-JS</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
+                                        </div>
+
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">React</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
+                                        </div>
                     
                                         <!-- Card slider PHP -->
                                         <div class="card-item swiper-slide">
                                             <!-- Ici : Logo du language programmation -->
                                             <h1 class="subtitle">PHP</h1>
-                                            <h2 class="secondsubtitle">Phase de découverte</h2>
+                                            <h2 class="secondsubtitle">Formation</h2>
                                         </div>
                                         <!-- FIN -  Card slider PHP -->
+
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">Bootstrap</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
+                                        </div>
+
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">Symfony</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
+                                        </div>
+
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">Laravel</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
+                                        </div>
+
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">Sass</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
+                                        </div>
                     
                                         <!-- Card slider GitHub -->
                                         <div class="card-item swiper-slide">
@@ -213,21 +261,43 @@
                                             <h1 class="subtitle">GitHub</h1>
                                         </div>
                                         <!-- FIN -  Card slider GitHub -->
-                    
-                                        <!-- Card slider Algorythmes -->
+
                                         <div class="card-item swiper-slide">
                                             <!-- Ici : Logo du language programmation -->
-                                            <h1 class="subtitle">Algorythmes</h1>
-                                            <h2 class="secondsubtitle">Phase d'apprentissage</h2>
+                                            <h1 class="subtitle">Scrum</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
                                         </div>
 
                                         <div class="card-item swiper-slide">
                                             <!-- Ici : Logo du language programmation -->
-                                            <h1 class="subtitle">Autres ...</h1>
-                                            <h2 class="secondsubtitle">languages que je souhaite apprendre ...</h2>
+                                            <h1 class="subtitle">Agile</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
                                         </div>
-                                        <!-- FIN -  Card slider Algorythmes -->
-                    
+                                        
+                                        <!-- Card slider Algorythmes -->
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">Algorythmes</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
+                                        </div>
+
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">Filezilla</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
+                                        </div>
+
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">RGPD</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
+                                        </div>
+
+                                        <div class="card-item swiper-slide">
+                                            <!-- Ici : Logo du language programmation -->
+                                            <h1 class="subtitle">WAMP</h1>
+                                            <h2 class="secondsubtitle">Formation</h2>
+                                        </div>
                                     </div>
                                 </div>
                             <!-- FIN - Card slider HTML -->
